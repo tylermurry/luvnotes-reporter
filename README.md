@@ -22,4 +22,4 @@ This simple utility will scrape Little Sunshine's website to gather the daily Lu
 * `--interval` - The amount of time between runs. Default is 60 seconds.
 
 ###### Full Example:
-`node ./index.js --lsUser=SomeUser --lsPass=SomePass --emailUser=EmailUser --emailPass=emailPass --chilren="John Smith, Jane Smith" --toEmails="1111111111@mms.att.net;anotheremail.com" --internal=90`
+`node ./index.js --lsUser=SomeUser --lsPass=SomePass --emailUser=EmailUser --emailPass=EmailPass --children="John Smith, Jane Smith" --toEmails="1111111111@mms.att.net;anotheremail.com" --internal=90`
