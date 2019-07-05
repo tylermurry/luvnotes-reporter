@@ -1,7 +1,7 @@
 # LuvNotes Reporter for Little Sunshines Daycare
 This simple utility will scrape Little Sunshine's website to gather the daily LuvNote report and send an email with the summarized content.
 
-## Requirement
+## Requirements
 * Little Sunshine's Daycare account (https://www.littlesunshine.com)
 * Node / npm
 
