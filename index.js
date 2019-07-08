@@ -152,7 +152,7 @@ const main = async () => {
 
         try {
             // const today = 'jul-1-2019';
-            const today = moment().format('MMM-d-YYYY').toLowerCase();
+            const today = moment().format('MMM-D-YYYY').toLowerCase();
 
             for (const child of children.split(',')) {
                 const childKey = `${child}-${today}`;
