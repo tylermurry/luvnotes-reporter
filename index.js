@@ -7,7 +7,7 @@ const nodemailer = require("nodemailer");
 let driver;
 let sentDates = [];
 const {
-    children, lsUser, lsPass, emailUser, emailPass, interval=60, toEmails
+    children, lsUser, lsPass, emailUser, emailPass, interval=60, toEmails, debug
 } = require('minimist')(process.argv.slice(2));
 
 // ----- Core -----
@@ -160,7 +160,10 @@ const main = async () => {
                     await getReport(today, child.replace(' ', '-').toLowerCase())
                         .then(report => sendReport(report, child))
                         .then( () => sentDates.push(childKey))
-                        .catch(() => console.log(`Could not get ${child}\'s report`));
+                        .catch((e) => {
+                          console.log(`Could not get ${child}\'s report`);
+                          if (debug) console.log(e);
+                        });
                 }
             }
 
