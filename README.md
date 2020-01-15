@@ -20,6 +20,7 @@ This simple utility will scrape Little Sunshine's website to gather the daily Lu
 * `--children` - Quoted, comma-separated list of children you want reports for. E.g. `--children="John Smith,Jane Smith"` 
 * `--toEmails` - Quoted, semi-colon-separated list of emails you want the report to be sent to. E.g. `--toEmails="1111111111@mms.att.net;someemail@gmail.com"`
 * `--interval` - The amount of time between runs. Default is 60 seconds.
+* `--debug` - Show verbose errors.
 
 ###### Full Example:
 `node ./index.js --lsUser=SomeUser --lsPass=SomePass --emailUser=EmailUser --emailPass=EmailPass --children="John Smith, Jane Smith" --toEmails="1111111111@mms.att.net;anotheremail.com" --internal=90`
